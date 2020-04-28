@@ -1,6 +1,6 @@
 <template>
   <tab-bar >
-    <tab-bar-item v-for="item of tabBarList" :path="item.path">
+    <tab-bar-item v-for="item of tabBarList" :path="item.path" >
       <img :src="item.img" alt="" slot="item-icon">
       <img :src="item.imgActive" alt="" slot="item-icon-active">
       <div slot="item-text">{{item.name}}</div>
@@ -37,11 +37,6 @@
                 path: '/cart',
                 img: '/img/tabbar/cart.svg',
                 imgActive: '/img/tabbar/cart_active.svg'
-              },{
-                name: '我的',
-                path: '/profile',
-                img: '/img/tabbar/profile.svg',
-                imgActive: '/img/tabbar/profile_active.svg'
               },{
                 name: '我的',
                 path: '/profile',
